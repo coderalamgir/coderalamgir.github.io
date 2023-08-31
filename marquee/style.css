@@ -53,6 +53,7 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    border:1px solid #e80000
 }
 
 .team_member_image {
