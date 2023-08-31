@@ -1,0 +1,140 @@
+/*********TEAM MEMBER CSS*********/
+
+.container {
+    width: 1200px;
+    margin: 100PX auto;
+}
+.team_member_heading {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    position: relative ;
+}
+
+.team_member_heading h4 {
+    color: #c80000;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.team_member_heading::before {
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    content: "";
+    left: 205px;
+    top: 55px;
+    background: #c80000;
+}
+
+.team_member_heading::after {
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    content: "";
+    right: 205px;
+    top: 55px;
+    background: #c80000;
+}
+
+
+.team_members {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.single_team_member {
+    width: 33.3333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.team_member_image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.team_member_image {
+    padding: 40px;
+    text-align: center;
+    border-bottom: 10px solid #c80000;
+}
+
+.team_member_info {
+    background: #000;
+    color: #fff;
+    margin-bottom: 30px;text-align: center;
+}
+.team_member_image img {
+    border-radius: 50%;
+}
+
+.team_member_image {
+    padding: 40px;
+    text-align: center;
+    border-bottom: 10px solid #c80000;
+}
+
+
+
+
+.team_member_heading {
+    text-align: center;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.team_member_heading h4 {
+    color: #c80000;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.team_member_meta svg {
+    width: 20px;
+    color:#fff
+}
+
+.team_member_meta p {display: flex;align-items: center;margin-bottom: 15px;margin-top: 5px;}
+
+.team_member_meta span {
+    background: #e80000;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+}
+.team_member_hover {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding:30px;
+    border-top: 10px solid #e80000;
+}
+.single_team_member_inner {
+    position: relative;
+    box-shadow: 5px 5px 11px #00000066;
+}
+.team_member_details {
+    margin-top: 25px;
+}
+.team_member_hover {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+}
+
+.single_team_member:hover .team_member_hover {
+    opacity: 1;
+    visibility: visible;
+}
