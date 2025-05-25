@@ -1,0 +1,65 @@
+
+/************* Main CSS ***********/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    outline: none;
+    color:inherit
+}
+:root{
+    --main-color-one: #15c0e8;
+    --heading-color: #263534;
+    --paragraph-color: #666;
+    --bg-color: #1e2a29;
+    --hover-color: #039dc0;
+    --hover-bg-color: #086a81;
+    --white: #fff;
+    --red: #f95759;
+    --body-font: "Roboto Slab", serif;
+    --heading-font: "Poppins", sans-serif;
+    
+}
+
+
+/************* About Us CSS ***********/
+.container{
+    width: 1600px;
+    margin: 50px auto 0;
+    display: flex;
+}
+.left_img img {
+    margin-right: 100px;
+    border-radius: 500px;
+}
+
+.right_content h1 {
+    color: var(--heading-color);
+    margin-bottom: 10px; 
+    font-size: 45px;
+    font-weight: 700;  
+    font-family: var(--heading-font);
+}
+
+.right_content p{
+    margin-bottom: 20px;
+    font-family: var(--body-font);
+    font-size: 20px;
+}
+a.btn {
+    color: var(--white);
+    background-color: var(--main-color-one);
+    padding: 15px 25px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    transition: ease;
+    transition-duration: 1s;
+}
+a:hover{
+    background-color:var(--hover-bg-color)
+}

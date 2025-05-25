@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input{
+  outline:none;
+}
+
+body{
+  margin: 50px 15%;
+  text-align: center;
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight;
+  font-style: normal; */
+  
+}
+
+
+.tab_practice{
+  margin:20px  5px;
+  flex-basis: 500px;
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+.tab_practice h1{
+  background-color: brown;
+  padding: 20px;
+  font-size: 45px;
+  color: #fff;
+  cursor:pointer;
+}
+.tab_content{
+  padding:40px;
+  font-size:20px;
+  background-color:#504f4f;
+  color:#fff;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-basis: content;
+}
+.tab_content.slideDown{
+    display:none;
+}
+
+.tab_practice:hover {
+    margin-top: -2px;
+  }
+
+
+  /* form css*/
+.form_container{
+  margin:100px 0;
+}
+
+.form_container h2 {
+  text-transform: capitalize;
+  font-weight: inherit;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#6c5ce7, #e84393);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+button{
+  margin-top: 60px;
+  padding: 15px 25px;
+  font-size: 25px;
+  border: 2px solid #e84393;
+  border-radius: 7px;
+  background-color: #ee5253;
+  color: #fff;
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: .2s;
+}
+button:hover{
+  background-color: #e84393;
+  border:2px solid #6c5ce7
+}
+
+
+.form_fill {
+  width: 500px;
+  background-color: #222f3e;
+  margin: 20px auto;
+  padding: 30px;
+  display: none;
+  position: absolute;
+  left: 700px;
+  top:450px;
+}
+
+
+.form_fill form{
+  float:left;
+  color:#fff;
+  font-size: 25px;
+  width: 100%;
+}
+input[type=text], input[type=date], #gender, input[type=password]{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #9566db;
+  margin-bottom: 25px;
+}
+
+input[type=submit]{
+  width:100%;
+  font-size: 25px;
+  margin-top:30px;
+  cursor:pointer;
+  text-transform: capitalize;
+}
+form, label{
+  float:left;
+}
