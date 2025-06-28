@@ -94,11 +94,94 @@ span{
     position: relative;
     width:32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid;
+    box-shadow: 0 0 25px  #00ffff;
     cursor: pointer;
     transition: 0.2s linear;
 }
 .home_img img:hover{
     font-size: 1.8rem;
     font-weight: 500;
+}
+.social_icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #00ffff;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 0.5rem 3rem;
+    transition: 0.3s ease;
+    color:#fff;
+}
+.social_icons a:hover {
+    background-color: #00ffff;
+    color: #000;
+    transform: scale(1.2);
+}
+
+a.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #00ffff;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #000000;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #efefef;
+    transition: 0.3s ease;
+}
+a.btn:hover {
+    background-color: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    transform:scale(1.03)
+}
+.typing_text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.typing_text span{
+    position:relative
+}
+.typing_text span:before{
+    color: #00ffff;
+    content: "Web developer.";
+    animation: words 6s infinite;
+}
+
+.typing_text span:after{
+    content:"";
+    background-color:#00ffff;
+    position:absolute;
+    width:calc(100% + 8px);
+    height:-8;
+    animation:cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    border-left{
+        3px solid #00ffff;
+    }
+}
+@keyframes words{
+    0%, 20%{
+        content:"Web Developer";
+    }
+    21%,40%{
+        content:"Software Developer";
+    }
+    41%,60%{
+        content:"Web Disigner";
+    }
+    61%,80%{
+        content:"Youtuber";
+    }
+    81%,100%{
+        content:"Script Writer";
+    }
 }
